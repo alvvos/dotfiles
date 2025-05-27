@@ -1,0 +1,16 @@
+zstyle ':completion::complete:*' cache-path ${XDG_CACHE_HOME}/zsh/zcompcache
+
+zmodule ohmyzsh/ohmyzsh --root plugins/sudo
+zmodule ohmyzsh/ohmyzsh --root plugins/colored-man-pages
+
+zmodule Aloxaf/fzf-tab
+
+zmodule environment
+zmodule input
+zmodule fzf
+
+zmodule zsh-users/zsh-completions --fpath src
+zmodule completion
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
+zmodule kutsan/zsh-system-clipboard

@@ -1,0 +1,113 @@
+format = '$all'
+palette = "flow" 
+
+[palettes.flow]
+cyan="#75F0E6"
+purple="#A875F0"
+light_blue="#75BDF0"
+blue="#7580F0"
+red="#F07580"
+teal="#75F0A8"
+green="#80F075"
+fluo="#FF007C"
+yellow="#F0E575"
+orange="#F0A875"
+
+grey_0="#141A1F"
+grey_1="#1B2228"
+grey_2="#3D4F5C"
+grey_3="#52697A"
+grey_4="#94A9B8"
+grey_5="#B2C1CC"
+grey_6="#D1DAE0"
+
+[username]
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = true
+format = "[$hostname]($style)"
+disabled = false
+
+[character]
+success_symbol = " [$shell❯](green)"
+error_symbol = " [$shell✖](red)"
+vimcmd_symbol = " [$shell❯](light_blue)"
+vimcmd_replace_one_symbol = " [$shell❯](purple)"
+vimcmd_replace_symbol = " [$shell❯](purple)"
+vimcmd_visual_symbol = " [$shell❯](purple)"
+
+[directory]
+disabled = false
+read_only = ""
+truncation_length = 3
+truncate_to_repo = true
+format = "[$read_only$path ](teal)"
+home_symbol = " "
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]](fluo) )'
+
+[git_branch]
+format = '[on ](grey_6)[$symbol$branch(:$remote_branch)](purple) '
+
+[package]
+symbol =" "
+display_private = true
+version_format = "v${raw} "
+format = "[$symbol$version]($style)"
+
+[conda]
+symbol = " "
+
+#=== languages ===
+[scala]
+symbol = " "
+
+[nodejs]
+format = "[via ](grey_6)[$symbol($version) ](blue)"
+
+[python]
+symbol = " "
+format = '[via ](grey_6)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )](blue)'
+
+[c]
+format = '[via ](grey_6)[$symbol($version) ](blue)'
+detect_extensions = ["c"]
+
+[gradle]
+symbol = " "
+format = '[via ](grey_6)[$symbol($version) ](blue)'
+
+[php]
+symbol = "󰌟 "
+format = '[via ](grey_6)[$symbol($version) ](blue)'
+
+[perl]
+symbol = " "
+format = '[via ](grey_6)[$symbol($version) ](blue)'
+
+[lua]
+symbol = " "
+format = '[via ](grey_6)[$symbol($version) ](blue)'
+
+[custom.cpp]
+symbol = " "
+format = '[via ](grey_6)[$symbol ](blue)'
+detect_extensions = ["cpp", "hpp"]
+
+[custom.tex]
+detect_extensions = ["tex"]
+symbol = " "
+format = '[via ](grey_6)[$symbol($version) ](blue)'
+
+[rust]
+symbol = " "
+
+[custom.docker]
+files = ["Dockerfile", 'docker-compose.yml', "docker-compose.yaml"]
+symbol = " "
+format = '[via ](grey_6)[$symbol($version) ](blue)'

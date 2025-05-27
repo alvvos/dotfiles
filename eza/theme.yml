@@ -1,0 +1,18 @@
+filenames:
+  # Just change the icon glyph
+  Repos: {icon: {glyph:  }}
+  Desktop: {icon: {glyph:  }}
+  Documents: {icon: {glyph:  }}
+  Videos: {icon: {glyph:  }}
+  Pictures: {icon: {glyph: 󰉏 }}
+  Downloads: {icon: {glyph: 󰉍 }}
+  Drive: {icon: {glyph: 󰅟 }}
+  Music: {icon: {glyph: 󱍙 }}
+  scripts: {icon: {glyph:  }}
+
+extensions:
+  # Change the filename color and icon
+  # rs: {filename: {foreground: Red}, icon: {glyph: 󰉏 }}
+
+  # Change the icon glyph and color
+  # nix: {icon: {glyph: ❄, style: {foreground: White}}}
