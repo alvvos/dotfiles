@@ -5,7 +5,7 @@ alias cd="z"
 # University alias
 alias horario="$HOME/Repos/fancy-cat/zig-out/bin/fancy-cat $HOME/Drive/universidad/cursos/curso-2024-2025/horarios/horario-segundo-cuatrimestre.pdf 2>/dev/null"
 alias calendario="zathura $HOME/Drive/universidad/cursos/curso-2024-2025/horarios/calendario.pdf 2>/dev/null"
-
+alias localnet='avahi-browse -art 2>/dev/null | pcregrep -M -o1 -o2 --om-separator "|" "hostname = \[(.)\.local\]$\n. address = \[(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\]$" | sed "s/|/ -> /; s/ -> /:/2" | sort -u'
 # Easier commands names
 # alias pdf="$HOME/Repos/termpdf.py/termpdf.py 2>/dev/null"
 alias pdf="$HOME/Repos/fancy-cat/zig-out/bin/fancy-cat"
