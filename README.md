@@ -14,5 +14,5 @@
 ## Install
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/antoniolandin/dotfiles/refs/heads/main/install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/alvvos/dotfiles/refs/heads/main/install.sh | sh
 ```
